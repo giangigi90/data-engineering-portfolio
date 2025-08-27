@@ -1,0 +1,20 @@
+name: 'ccrm_dbt'
+version: '1.0.0'
+config-version: 2
+
+profile: 'ccrm'
+
+model-paths: ['models']
+analysis-paths: ['analysis']
+test-paths: ['tests']
+seed-paths: ['seeds']
+macro-paths: ['macros']
+snapshot-paths: ['snapshots']
+
+models:
+  ccrm_dbt:
+    +materialized: view
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

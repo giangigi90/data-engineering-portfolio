@@ -1,0 +1,9 @@
+apache-airflow==2.9.2
+psycopg2-binary
+pandas
+pyarrow
+sqlalchemy
+requests
+dbt-core
+dbt-postgres
+boto3
